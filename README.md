@@ -5,29 +5,20 @@ Este proyecto es un clon de Twitter desarrollado con FastAPI y PostgreSQL, despl
 - Docker y Docker Compose instalados en el sistema.
 
 ## 🔧 Instalación y ejecución
-### 1️⃣ Clonar el repositorio
+###  Clonar el repositorio
 ```bash
 git clone https://github.com/debleon/twitter_clon.git
 cd twitter_clon
 ```
 
-### 2️⃣ Configurar variables de entorno
-Crear un archivo `.env` en la raíz del proyecto con el siguiente contenido:
-```env
-DATABASE_URL=postgresql://user:password@db/twitter_clon
-SECRET_KEY=supersecretkey
-ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=30
-```
-
-### 3️⃣ Construir y ejecutar los contenedores
+### 3 Construir y ejecutar los contenedores
 Ejecuta el siguiente comando:
 ```bash
 docker-compose up --build
 ```
 Esto iniciará la base de datos PostgreSQL y la API en FastAPI.
 
-### 4️⃣ Acceder a la API
+### 4Acceder a la API
 Una vez ejecutado el proyecto, puedes acceder a la documentación interactiva de la API en:
 - 📌 **Swagger UI**: [http://localhost:8000/docs](http://localhost:8000/docs)
 - 📌 **Redoc**: [http://localhost:8000/redoc](http://localhost:8000/redoc)
