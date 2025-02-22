@@ -7,14 +7,14 @@ Este proyecto es un clon de Twitter desarrollado con FastAPI y PostgreSQL, despl
 ## 🔧 Instalación y ejecución
 ### 1️⃣ Clonar el repositorio
 ```bash
-git clone https://github.com/tu_usuario/twitter_clone.git
-cd twitter_clone
+git clone https://github.com/debleon/twitter_clon.git
+cd twitter_clon
 ```
 
 ### 2️⃣ Configurar variables de entorno
 Crear un archivo `.env` en la raíz del proyecto con el siguiente contenido:
 ```env
-DATABASE_URL=postgresql://user:password@db/twitter_clone
+DATABASE_URL=postgresql://user:password@db/twitter_clon
 SECRET_KEY=supersecretkey
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
@@ -44,5 +44,3 @@ Si necesitas realizar migraciones manuales con SQLAlchemy, ejecuta:
 docker-compose exec api alembic upgrade head
 ```
 
-## 📜 Licencia
-Este proyecto está bajo la licencia MIT.
